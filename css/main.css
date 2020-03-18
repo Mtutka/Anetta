@@ -3,6 +3,17 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Red Hat Display", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 /* HERO IMAGE */
@@ -11,6 +22,14 @@
   background-color: #1e90ff;
   height: 100vh;
   width: 100%;
+}
+
+.hero .bcg {
+  display: none;
+}
+
+.hero .bcg1 {
+  display: none;
 }
 
 .hero .wrapper {
@@ -37,7 +56,7 @@
   margin: auto;
   width: 100%;
   font-size: 70px;
-  padding: 0 40px;
+  padding-left: 12vw;
 }
 
 .hero .wrapper .button {
@@ -53,19 +72,24 @@
   height: 10vh;
   text-align: center;
   padding: 10px 25px;
-  font-size: 20px;
+  font-size: 3vh;
   border: 3px solid black;
   letter-spacing: 3px;
+}
+
+.hero .wrapper .button button:hover {
+  cursor: pointer;
 }
 
 /* ABOUT SECTION */
 
 .about {
   background-color: white;
-  position: absolute;
-  top: 100vh;
-  left: 0;
-  min-height: 50vh;
+  padding-bottom: 30px;
+}
+
+.about .bcg {
+  display: none;
 }
 
 .about h1 {
@@ -79,6 +103,153 @@
   padding: 10px 30px;
   text-align: justify;
   font-size: 18px;
+}
+
+/* SERVICES SECTION  */
+
+.services {
+  background-color: #1e90ff;
+  display: flex;
+  flex-direction: column;
+}
+
+.services .servTitle {
+  display: none;
+}
+
+.services .container {
+  padding: 10px 0 20px 0;
+}
+
+.services .container h1 {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 38px;
+}
+
+.services .container .photo {
+  float: left;
+  width: 50vw;
+  height: 45vh;
+  margin-right: 20px;
+  background-color: red;
+}
+
+.services .reverse .photo {
+  float: right;
+  margin: 0 0 0 20px;
+}
+
+.services .container .photo .clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.services .container .one {
+  background-image: url(/DlaMamy/pic/home.jpg);
+  background-size: cover;
+}
+
+.services .container .two {
+  background-image: url(/DlaMamy/pic/office.jpg);
+  background-size: cover;
+}
+
+.services .container .three {
+  background-image: url(/DlaMamy/pic/house.jpg);
+  background-size: cover;
+}
+
+.services .container p {
+  padding: 10px 30px;
+  text-align: justify;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* FOOTER  */
+
+.footer {
+  position: relative;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  height: 10vh;
+  width: 100%;
+}
+
+.footer .ic {
+  position: relative;
+  text-align: center;
+  width: 33%;
+  top: 0;
+  left: 0;
+  font-size: 5vh;
+  padding: 10px 0 0 0;
+  cursor: pointer;
+}
+
+.footer a {
+  position: relative;
+  text-align: center;
+  width: 33%;
+  top: 0;
+  left: 0;
+  font-size: 5vh;
+  padding: 4px 0 0 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.footer .hidd {
+  margin: 5px;
+  padding: 0;
+  font-size: 3vh;
+  position: absolute;
+  cursor: pointer;
+  bottom: 4vh;
+  left: -80vw;
+  transition: 0.5s;
+}
+
+.footer .showContent {
+  left: 4vw;
+}
+
+.footer .rights {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.fa-chevron-left {
+  margin: 0;
+  padding: 0;
+  font-size: 5vh;
+  position: absolute;
+  cursor: pointer;
+  bottom: 4vh;
+  left: -10vw;
+  transform: rotate(-180deg);
+}
+
+.footer .hidden {
+  left: -100vw;
+}
+
+.showPhone {
+  left: 42vw;
+  transform: rotate(0);
+}
+
+.showMail {
+  left: 75vw;
+  transform: rotate(0);
+}
+
+.fas,
+.fab {
+  transition: 0.5s;
 }
 
 @media (orientation: landscape) {
@@ -100,5 +271,226 @@
     width: 35%;
     height: 15vh;
     font-size: 18px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .hero .bcg {
+    position: relative;
+    display: block;
+    background-color: #1e90ff;
+    width: 50vw;
+    height: 200vh;
+    transform: rotate(-33deg);
+    right: -50vw;
+    top: -50vh;
+  }
+
+  .hero .bcg1 {
+    position: absolute;
+    display: block;
+    background-color: #1e90ff;
+    width: 42.6vw;
+    height: 100%;
+    right: 0;
+    top: 39vh;
+  }
+
+  .hero .wrapper {
+    position: absolute;
+    display: block;
+    z-index: 1;
+  }
+
+  .hero .wrapper .hello {
+    position: relative;
+    top: 20vh;
+    left: 45vw;
+  }
+
+  .hero .wrapper .name {
+    position: relative;
+    top: 20vh;
+    left: 20vw;
+  }
+
+  .hero .wrapper .name p {
+    display: inline-block;
+  }
+
+  .hero .wrapper .button {
+    position: relative;
+    top: 30vh;
+    left: 30vw;
+  }
+
+  .hero .wrapper .button button {
+    width: 30%;
+    height: 10vh;
+    padding: 10px 30px;
+    font-size: 5vh;
+  }
+
+  .about {
+    width: 100%;
+    position: relative;
+  }
+
+  .about .wrap {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 48%;
+  }
+
+  .about .photo {
+    position: absolute;
+    width: 30%;
+    height: 80%;
+    top: 10%;
+    left: 60%;
+    z-index: 1;
+  }
+
+  .about .bcg {
+    position: absolute;
+    display: block;
+    background-color: #1e90ff;
+    width: 42.6vw;
+    height: 100%;
+    right: 0;
+    top: 0;
+  }
+
+  .services {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .services .servTitle {
+    display: block;
+    text-align: center;
+    width: 100%;
+    font-size: 70px;
+  }
+
+  .services .container {
+    flex-grow: 1;
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .services .container h1 {
+    margin: 30px 0;
+    font-size: 3.5vh;
+  }
+
+  .services .container .photo {
+    width: 80%;
+    height: 50vh;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .services .reverse .photo {
+    margin: 10px;
+  }
+
+  .services .container p {
+    display: none;
+  }
+
+  .services .container p {
+    display: none;
+  }
+
+  .footer {
+    background-color: #1e90ff;
+    flex-wrap: nowrap;
+  }
+
+  .footer .ic {
+    width: 6%;
+    line-height: 8vh;
+  }
+
+  .footer a {
+    width: 6%;
+    line-height: 8vh;
+    padding: 10px 0 0 0;
+  }
+
+  .footer .hidd {
+    font-size: 5vh;
+    bottom: 0;
+    line-height: 10vh;
+  }
+
+  .footer .rights {
+    flex-grow: 1;
+    margin: 0 2vw 0 0;
+    line-height: 10vh;
+    text-align: right;
+  }
+
+  .fa-chevron-left {
+    font-size: 5vh;
+    bottom: 3.1vh;
+  }
+
+  .showPhone {
+    left: 19vw;
+    transform: rotate(0);
+  }
+
+  .showMail {
+    left: 33vw;
+    transform: rotate(0);
+  }
+}
+@media (width: 1024px) and (height: 720px) {
+  .about .bcg {
+    width: 32vw;
+  }
+  .hero .bcg1 {
+    width: 32vw;
+  }
+}
+
+@media (width: 1366px) and (height: 768px) {
+  .about .bcg {
+    width: 36.5vw;
+  }
+  .hero .bcg1 {
+    width: 36.5vw;
+  }
+}
+
+@media (width: 1440px) and (height: 900px) {
+  .about .bcg {
+    width: 34.5vw;
+  }
+  .hero .bcg1 {
+    width: 34.5vw;
+  }
+}
+
+@media (width: 1920px) {
+  .about .bcg {
+    width: 38vw;
+  }
+
+  .hero .bcg1 {
+    width: 38vw;
   }
 }
