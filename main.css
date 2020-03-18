@@ -147,17 +147,17 @@ a {
 }
 
 .services .container .one {
-  background-image: url(/DlaMamy/pic/home.jpg);
+  background-image: url(pic/home.jpg);
   background-size: cover;
 }
 
 .services .container .two {
-  background-image: url(/DlaMamy/pic/office.jpg);
+  background-image: url(pic/office.jpg);
   background-size: cover;
 }
 
 .services .container .three {
-  background-image: url(/DlaMamy/pic/house.jpg);
+  background-image: url(pic/house.jpg);
   background-size: cover;
 }
 
