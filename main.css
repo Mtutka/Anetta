@@ -132,7 +132,7 @@ a {
   width: 50vw;
   height: 45vh;
   margin-right: 20px;
-  background-color: red;
+  background-color: black;
 }
 
 .services .reverse .photo {
@@ -374,6 +374,79 @@ a {
     flex-wrap: wrap;
   }
 
+  .services .container .one:hover,
+  .services .container .two:hover,
+  .services .container .three:hover {
+    cursor: pointer;
+  }
+  .services .container p:hover {
+    cursor: pointer;
+  }
+  .circleOutside {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+  }
+  .circleOutside .circleInside {
+    position: relative;
+    height: 10vw;
+    width: 10vw;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 100%;
+  }
+  .circleOutside .circleInside:before,
+  .circleOutside .circleInside:after {
+    border: 1px solid #d1e7da;
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    height: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 100%;
+    transform-origin: center center;
+    opacity: 0;
+    box-sizing: border-box;
+  }
+  .circleOutside .circleInside:before {
+    animation: 2s 0.1s pulse2 infinite linear;
+  }
+  .circleOutside .circleInside::after {
+    animation: 2s pulse infinite linear;
+  }
+  @keyframes pulse {
+    0% {
+      transform: scale(2);
+      opacity: 0.2;
+    }
+    25% {
+      transform: scale(2.3);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(2.3);
+      opacity: 0;
+    }
+  }
+  @keyframes pulse2 {
+    0% {
+      transform: scale(1.5);
+      opacity: 0.5;
+    }
+    25% {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
   .services .servTitle {
     display: block;
     text-align: center;
@@ -493,4 +566,24 @@ a {
   .hero .bcg1 {
     width: 38vw;
   }
+}
+
+/* SERVICES EFFECT */
+
+.services .container {
+  position: relative;
+}
+
+.services .container .dark {
+  opacity: 0.2;
+}
+
+.services .container .light {
+  position: absolute;
+  display: block;
+  width: 20vw;
+  padding: 10px 30px;
+  text-align: justify;
+  font-size: 16px;
+  letter-spacing: 1px;
 }

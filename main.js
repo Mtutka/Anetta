@@ -7,16 +7,56 @@ const arrow = document.querySelector(".fa-chevron-left");
 const phoneNumber = document.querySelector(".phone");
 const mailAdress = document.querySelector(".mail");
 
-// const photo = document.querySelectorAll(".photo");
+const photoOne = document.querySelector(".one");
+const photoTwo = document.querySelector(".two");
+const photoThree = document.querySelector(".three");
+const DescriptionOne = document.querySelector(".DesOne");
+const DescriptionTwo = document.querySelector(".DesTwo");
+const DescriptionThree = document.querySelector(".DesThree");
 
-// const clickedPhoto = () => {
-//   const width = window.innerWidth;
-//   console.log(width);
-//   if (width >= 1024) {
-//   }
-// };
+photoOne.addEventListener("click", () => {
+  const width = window.innerWidth;
+  if (width >= 1024) {
+    photoOne.classList.toggle("dark");
+    DescriptionOne.classList.toggle("light");
+  }
+});
+photoTwo.addEventListener("click", () => {
+  const width = window.innerWidth;
+  if (width >= 1024) {
+    photoTwo.classList.toggle("dark");
+    DescriptionTwo.classList.toggle("light");
+  }
+});
+photoThree.addEventListener("click", () => {
+  const width = window.innerWidth;
+  if (width >= 1024) {
+    photoThree.classList.toggle("dark");
+    DescriptionThree.classList.toggle("light");
+  }
+});
 
-// photo.addEventListener("click", clickedPhoto);
+DescriptionOne.addEventListener("click", () => {
+  const width = window.innerWidth;
+  if (width >= 1024) {
+    photoOne.classList.toggle("dark");
+    DescriptionOne.classList.toggle("light");
+  }
+});
+DescriptionTwo.addEventListener("click", () => {
+  const width = window.innerWidth;
+  if (width >= 1024) {
+    photoTwo.classList.toggle("dark");
+    DescriptionTwo.classList.toggle("light");
+  }
+});
+DescriptionThree.addEventListener("click", () => {
+  const width = window.innerWidth;
+  if (width >= 1024) {
+    photoThree.classList.toggle("dark");
+    DescriptionThree.classList.toggle("light");
+  }
+});
 
 btn.addEventListener("click", () => {
   const height = window.innerHeight;
