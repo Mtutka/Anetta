@@ -88,13 +88,13 @@ a {
   display: none;
   top: -60vh;
   left: 5vw;
-  -o-transform: scale(0.4) translate(-100%, -100%);
+  -o-transform: scale(0.4) translate(-50%, -50%);
 
-  -moz-transform: scale(0.4) translate(-100%, -100%);
+  -moz-transform: scale(0.4) translate(-50%, -50%);
 
-  -ms-transform: scale(0.4) translate(-100%, -100%);
+  -ms-transform: scale(0.4) translate(-50%, -50%);
 
-  -webkit-transform: scale(0.4) translate(-100%, -100%);
+  -webkit-transform: scale(0.4) translate(-50%, -50%);
 
   transform: scale(40%) translate(-50%, -50%);
 }
