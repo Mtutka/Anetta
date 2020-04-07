@@ -88,13 +88,13 @@ a {
   display: none;
   top: -60vh;
   left: 5vw;
-  -o-transform: scale(40%) translate(-100%, -100%);
+  -o-transform: scale(0.4) translate(-100%, -100%);
 
-  -moz-transform: scale(40%) translate(-100%, -100%);
+  -moz-transform: scale(0.4) translate(-100%, -100%);
 
-  -ms-transform: scale(40%) translate(-100%, -100%);
+  -ms-transform: scale(0.4) translate(-100%, -100%);
 
-  -webkit-transform: scale(40%) translate(-100%, -100%);
+  -webkit-transform: scale(0.4) translate(-100%, -100%);
 
   transform: scale(40%) translate(-50%, -50%);
 }
@@ -399,13 +399,13 @@ a {
     display: block;
     position: absolute;
 
-    -o-transform: scale(40%) translate(-100%, -100%);
+    -o-transform: scale(0.4) translate(-100%, -100%);
 
-    -moz-transform: scale(40%) translate(-100%, -100%);
+    -moz-transform: scale(0.4) translate(-100%, -100%);
 
-    -ms-transform: scale(40%) translate(-100%, -100%);
+    -ms-transform: scale(0.4) translate(-100%, -100%);
 
-    -webkit-transform: scale(40%) translate(-100%, -100%);
+    -webkit-transform: scale(0.4) translate(-100%, -100%);
     transform: scale(40%) translate(-100%, -100%);
     top: 28%;
     left: 60%;
@@ -610,13 +610,13 @@ a {
   }
 
   .about .photo {
-    -o-transform: scale(30%) translate(-100%, -100%);
+    -o-transform: scale(0.3) translate(-100%, -100%);
 
-    -moz-transform: scale(30%) translate(-100%, -100%);
+    -moz-transform: scale(0.3) translate(-100%, -100%);
 
-    -ms-transform: scale(30%) translate(-100%, -100%);
+    -ms-transform: scale(0.3) translate(-100%, -100%);
 
-    -webkit-transform: scale(30%) translate(-100%, -100%);
+    -webkit-transform: scale(0.3) translate(-100%, -100%);
     transform: scale(30%) translate(-100%, -100%);
     top: -5%;
     left: 48%;
@@ -642,13 +642,13 @@ a {
   }
 
   .about .photo {
-    -o-transform: scale(30%) translate(-100%, -100%);
+    -o-transform: scale(0.3) translate(-100%, -100%);
 
-    -moz-transform: scale(30%) translate(-100%, -100%);
+    -moz-transform: scale(0.3) translate(-100%, -100%);
 
-    -ms-transform: scale(30%) translate(-100%, -100%);
+    -ms-transform: scale(0.3) translate(-100%, -100%);
 
-    -webkit-transform: scale(30%) translate(-100%, -100%);
+    -webkit-transform: scale(0.3) translate(-100%, -100%);
     transform: scale(30%) translate(-100%, -100%);
     top: -5%;
     left: 48%;
